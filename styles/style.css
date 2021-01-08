@@ -1,9 +1,16 @@
 body {
     background-size: cover;
-    background-color: black;
+    background-color: white;
     /*background-image: url(../images/highlander.jpg);*/
 }
 h1 {
-  color: grey;
+  color: white;
   text-align: center;
+}
+h2 {
+  color: black;
+}
+
+.header {
+  background-color: grey;
 }

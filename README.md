@@ -1,9 +1,22 @@
-# Project Name
+# JQuery - Salary - Calculator
 
-[Project Instructions](./INSTRUCTIONS.md), this line may be removed once you have updated the README.md
 
 ## Description
 
-Your project description goes here. What problem did you solve? How did you solve it?
+Create a form for employee data collection that displays in a table. The data sets are first name, last name, Id numbers, job titles and annual salary.
 
-Additional README details can be found [here](https://github.com/PrimeAcademy/readme-template/blob/master/README.md).
+Using html and css the headers, forms and tables were created. Using Jquery the data has been pushed to the DOM.
+
+## Screen Shot
+## Prerequisites
+## Installation
+## Usage
+
+    1. Fill in form.
+    2. Click submit button.
+    3. If desire to remove employee click delete button.
+
+## Built With
+## License
+## Acknowledgement
+## Support
