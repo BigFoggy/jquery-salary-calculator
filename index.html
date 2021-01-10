@@ -4,24 +4,40 @@
     <meta charset="utf-8">
     <link rel="stylesheet" href="styles/style.css">
     <script src="scripts/jQuery.js" charset="utf-8"></script>
-    <script src="scripts/Java.js" charset="utf-8"></script>
-    <title>Title</title>
+    <script src="scripts/client.js" charset="utf-8"></script>
+    <title>Salary Calculator</title>
   </head>
   <body>
 
-    <div>
-      <h1 class='header'>Salary Calculator</h1>
+    <h1 class='header'>Salary Calculator</h1>
 
-    </div>
     <h2>Add Employee</h2>
-      <input type="text" id = "inputFName" placeholder="First Name">
-      <input type="text" id = "inputLName" placeholder="Last Name">
-      <input type="text" id = "inputIdNumber" placeholder="ID">
-      <input type="text" id = "inputTitle" placeholder="Title">
-      <input type="text" id = "inputAnSalary" placeholder="Annual Salary">
+        <input type="text" id="inputFName" placeholder="First Name">
+        <input type="text" id="inputLName" placeholder="Last Name">
+        <input type="text" id="inputIdNumber" placeholder="ID">
+        <input type="text" id="inputTitle" placeholder="Title">
+        <input type="text" id="inputAnSalary" placeholder="Annual Salary">
+        <button id='sButton'>Submit</button> 
 
-      <button id='sButton'>Submit</button>    
     <h2>Employees</h2>
+    <div class="tableOne">
+      <table id='empTbl'>
+        <thead>
+          <tr id='tblHdr'>
+            <th>First Name</th>
+            <th>Last Name</th>
+           <th>ID</th>
+            <th>Title</th>
+            <th>Annual Salary</th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody>
+       
+        </tbody>
+      </table>
+    </div>
+    <h2 id='tMonthly'>Total Monthly:</h2>
     
   </body>
 </html>

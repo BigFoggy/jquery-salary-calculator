@@ -10,7 +10,23 @@ h1 {
 h2 {
   color: black;
 }
-
 .header {
   background-color: grey;
+  padding: 10px;
+}
+table {
+  text-align: left;
+  width: 100%;
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+th, td {
+  padding: 10px;
+  border: 1px solid black;
+}
+#tMonthly {
+  text-align: right;
+}
+#tblHdr{
+  background-color: lightgrey;
 }
