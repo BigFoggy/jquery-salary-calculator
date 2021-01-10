@@ -12,12 +12,12 @@
     <h1 class='header'>Salary Calculator</h1>
 
     <h2>Add Employee</h2>
-        <input type="text" id="inputFName" placeholder="First Name">
-        <input type="text" id="inputLName" placeholder="Last Name">
-        <input type="text" id="inputIdNumber" placeholder="ID">
-        <input type="text" id="inputTitle" placeholder="Title">
-        <input type="text" id="inputAnSalary" placeholder="Annual Salary">
-        <button id='sButton'>Submit</button> 
+        <input type="text" id="inputFName" placeholder="First Name" autocomplete="off">
+        <input type="text" id="inputLName" placeholder="Last Name" autocomplete="off">
+        <input type="text" id="inputIdNumber" placeholder="ID" autocomplete="off">
+        <input type="text" id="inputTitle" placeholder="Title" autocomplete="off">
+        <input type="text" id="inputAnSalary" placeholder="Annual Salary" autocomplete="off">
+        <button id='sButton'>Submit</button>
 
     <h2>Employees</h2>
     <div class="tableOne">
@@ -26,7 +26,7 @@
           <tr id='tblHdr'>
             <th>First Name</th>
             <th>Last Name</th>
-           <th>ID</th>
+            <th>ID</th>
             <th>Title</th>
             <th>Annual Salary</th>
             <th></th>
@@ -37,7 +37,7 @@
         </tbody>
       </table>
     </div>
-    <h2 id='tMonthly'>Total Monthly:</h2>
+    <h2 id='tMonthly'>Total Monthly: $<span id=cash></span></span></h2>
     
   </body>
 </html>

@@ -14,7 +14,8 @@ function onReady(){
       <td><button id='dButton'>Delete</button></td>
     </tr>
   `);*/
-  
+  let tSalary = 0;
+
   $('#sButton').on('click', function(event){
     let fName = $('#inputFName').val();
     let lName = $('#inputLName').val();
@@ -32,11 +33,19 @@ function onReady(){
           <td><button class='dButton'>Delete</button></td>
         </tr>
       `);
+    tSalary += Number(aSalary) / 12;
+   
+  $('#cash').empty();
+  $('#cash').append(`${tSalary}`);
+    
   });
+  if (tSalary > 20000){
+    $('#tMonthly').css('bacground-color', 'red')
+  } 
 
   $('#empTbl tbody').on('click', function(event){//not targeting right
     const thingThatWasClickedOn = $(event.target);
-    thingThatWasClickedOn.parent().parent().remove();
+    thingThatWasClickedOn.closest('tr').remove();
     
   });
 }//end firstfunction
