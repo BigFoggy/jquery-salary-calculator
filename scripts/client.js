@@ -1,5 +1,5 @@
 $(document).ready(onReady);
-
+let tSalary = 0;
 //functions
 
 function onReady(){
@@ -14,7 +14,6 @@ function onReady(){
       <td><button id='dButton'>Delete</button></td>
     </tr>
   `);*/
-  let tSalary = 0;
 
   $('#sButton').on('click', function(event){
     let fName = $('#inputFName').val();
@@ -37,11 +36,11 @@ function onReady(){
    
   $('#cash').empty();
   $('#cash').append(`${tSalary}`);
-    
-  });
   if (tSalary > 20000){
-    $('#tMonthly').css('bacground-color', 'red')
-  } 
+    $('#tMonthly').addClass('redBack');
+  }    
+  });
+
 
   $('#empTbl tbody').on('click', function(event){//not targeting right
     const thingThatWasClickedOn = $(event.target);
