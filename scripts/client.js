@@ -20,6 +20,8 @@ function onReady(){
           <td><button class='dButton'>Delete</button></td>
         </tr>
       `);
+  //$('#xxxx').empty();//empties form
+
     tSalary += Number(aSalary) / 12;//equation to calculate accumlated salary
   updateMonthlyTotal();//run update function from line 36
    $('.dButton').off('click');//used to stop propagation of delete button click
@@ -36,7 +38,7 @@ function onReady(){
 function updateMonthlyTotal(){//empties and appends the salary to the DOM with css modifier
   $('#cash').empty();
   $('#cash').append(`${tSalary.toFixed(2)}`);//adds salary and sets it to 2 decimal points
-  if (tSalary > 20000){
+  if (tSalary >= 20000){
     $('#tMonthly').addClass('redBack');
   }
   else {
