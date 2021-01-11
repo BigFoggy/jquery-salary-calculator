@@ -20,7 +20,11 @@ function onReady(){
           <td><button class='dButton'>Delete</button></td>
         </tr>
       `);
-  //$('#xxxx').empty();//empties form
+  $('#inputFName').val('');//empties form
+  $('#inputlName').val('');
+  $('#inputIdNumber').val('');
+  $('#inputTitle').val('');
+  $('#inputAnSalary').val('');
 
     tSalary += Number(aSalary) / 12;//equation to calculate accumlated salary
   updateMonthlyTotal();//run update function from line 36
