@@ -22,7 +22,7 @@ function onReady(){
       `);
     tSalary += Number(aSalary) / 12;//equation to calculate accumlated salary
   updateMonthlyTotal();//run update function from line 36
-   $('.dButton').off('click');//used to stop proagation of delete button click
+   $('.dButton').off('click');//used to stop propagation of delete button click
    $('.dButton').on('click', function(event){//targets the nearest parent with id for removal from table
     const thingThatWasClickedOn = $(event.target);//setting needed variables
     let aSalary = thingThatWasClickedOn.closest('tr').find('.sal').text();
